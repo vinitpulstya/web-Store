@@ -17,7 +17,7 @@ class App extends Component {
         <Switch>
           <Route exact path = "/" component = {ProductList}></Route>
           <Route path = "/details" component = {Details}></Route>
-          <Route path = "/store" component = {Cart}></Route>
+          <Route path = "/cart" component = {Cart}></Route>
           <Route component = {Default}></Route>
         </Switch>
       </React.Fragment>
