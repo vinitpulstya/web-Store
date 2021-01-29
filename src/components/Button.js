@@ -5,7 +5,8 @@ export const ButtonContainer = styled.button `
     font-size:1.4 rem;
     background: transparent;
     border: 0.05rem solid var(--lightBlue);
-    color: var(--lightBlue);
+    border-color : ${prop => prop.cart?"var(--mainYellow)":"var(--lightBlue)"};
+    color:${prop => prop.cart? "var(--mainYellow)":"var(--lightBlue)"};
     border-radius: 0.5rem;
     padding: 0.2rem 0.5rem;
     cursor: pointer;
@@ -14,7 +15,7 @@ export const ButtonContainer = styled.button `
     transition : all 0.5s ease-in-out;
     // & => targetting the present container, here it is the ButtonContainer
     &:hover{
-        background:var(--lightBlue);
+        background:${prop => prop.cart? "var(--mainYellow)":"var(--lightBlue)"};
         color: var(--mainBlue);
     }
     &:focus{
